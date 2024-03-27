@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+
+            <!-- Dados Pessoas -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label>Nome completo: </label>
+                <input type="text" id="nome" name="nome" placeholder="Vitor Hugo Caldonha" required />
+
+                <label>E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="vitorhugoleme2010@hotmail.com" required />
+
+                <label>Senha: </label>
+                <input type="password" id="senha" name="senha" required /> <br /> <br />
+
+                <label>Sexo:</label>
+                <label>
+                    <input type="radio" name="sexo" id="masculino" value="Masculino" /> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" id="feminino" value="Feminino" /> Feminino
+                </label>
+
+            </fieldset>
+
+            <!-- Endereço-->
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+
+                <label>CEP: </label>
+                <input type="text" id="cep" name="cep" placeholder="14050-122" required />
+
+                <label>Logradouro: </label>
+                <input type="text" id="logradouro" name="logradouro" placeholder="Rua Monte Alverne" required />
+
+                <label>Numero: </label>
+                <input type="text" id="numero" name="numero" placeholder="365" required /> <br /><br />
+
+                <label>Complemento</label>
+                <input type="text" id="complemento" name="complemento" placeholder="Apartamento 22" /> <br />
+
+
+
+            </fieldset>
+
+            <!--Dados Financeiros-->
+
+            <fieldset>
+                
+                <legend>Dados Financeiros</legend>
+
+                <label>Tipo:</label>
+                <label>
+                    <input type="radio" name="tipo" id="nacional" value="nacional" /> Nacional
+                </label>
+                <label>
+                    <input type="radio" name="tipo" id="Internacional" value="Internacional" /> Internacional |
+                </label>
+
+                <label>Bandeira</label>
+                <select name="bandeira" id="bandeira" estado>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="elo">Elo </option>
+                </select>
+
+                <label>Numero do Cartao</label>
+                <input type="" id="numeroCartao" name="numeroCartao" placeholder="745554555844" required /> <br />
+
+
+                <label>Validade:</label>
+                <input type="date" id="data" name="data">
+
+                <!--botões-->
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+
+
+            </fieldset>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
